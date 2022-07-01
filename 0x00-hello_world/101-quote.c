@@ -2,15 +2,12 @@
 #include <unistd.h>
 
 /**
-  * main - Entry point
-  * to start our program
-  * Prints a string to output
-  * without printf and puts
-  * Return: 1
-  */
+ * main - prints exactly "and that piece of art is useful"
+ * - Dora Korpar, 2015-10-19",
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2, ch, 59);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
