@@ -1,22 +1,16 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
   * main - Entry point
   * to start our program
-  * Prints the size of data types
-  * Return: 0 is success
+  * Prints a string to output
+  * without printf and puts
+  * Return: 1
   */
 int main(void)
 {
-char c;
-int i;
-long int li;
-long long int lli;
-float f;
-	printf("Size of a char: %lu byte(s)\n", sizeof(c));
-	printf("Size of an int: %lu byte(s)\n", sizeof(i));
-	printf("Size of a long int: %lu byte(s)\n", sizeof(li));
-	printf("Size of a long long int: %lu byte(s)\n", sizeof(lli));
-	printf("Size of a float: %lu byte(s)\n", sizeof(f));
-	return (0);
+	char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, ch, 59);
+	return (1);
 }
