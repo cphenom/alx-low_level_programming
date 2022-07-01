@@ -15,6 +15,7 @@ int main(void)
 {
 	/* random number is n and its last digit is l */
 	int n;
+	int l;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -22,7 +23,7 @@ int main(void)
 	/* your code goes there */
 
 	/* store last digit of n array n[-1] as l */
-	int l = n % 10;
+	l = n % 10;
 
 	/* checker if last digit is greater than 5 */
 	if (l > 5)
