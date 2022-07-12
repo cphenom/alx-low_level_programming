@@ -7,9 +7,10 @@ int _strlen(char *s);
 void _puts(char *str);
 int _putchar(char c);
 void print_rev(char *s);
+void rev_string(char *s);
 
 #endif
 /** This is my header file for alx task
   * pointer,array and string
-  * @aurthor: Chimezie Onwudiwe
+  * @Author: Chimezie Onwudiwe
   */
