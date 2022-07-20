@@ -2,7 +2,7 @@
 /**
  * factorial - calculates the factorial of n
  * @n: integer
- *
+ * Author: Chimezie Onwudiwe
  * Return: the factorial of n, -1 for error.
  */
 int factorial(int n)
